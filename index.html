@@ -88,12 +88,61 @@
             <div class="container data-modal">
             
                 
-                <button class="data-modal-close" type="button">  
-                    <svg class="">
+                <button class="data-modal-close close" type="button">  
+                    <svg >
                         <use href="./images/icons/icon.svg#icon-close"></use>
                     </svg>
 
                 </button>
+
+                <form  class="formulario">
+                    <h3>Deje sus datos, nos contactaremos con usted  </h3>
+
+                    <div>
+                        <label for="input-name">Nombre</label>
+                        <input type="text" name="name " id="input-name">
+                        <svg class="svg-form">
+                            <use href="./images/icons/icon.svg#icon-persona" />
+                        </svg>
+                    </div>
+                    
+
+                    <div>
+                        <label for="input-phone">Teléfono</label>
+                        <input type="tel" name="telefono" id="input-phone">
+                        <svg  class="svg-form">
+                            <use href="./images/icons/icon.svg#icon-telfono-negro" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <label for="input-email">E-mail</label>
+                        <input type="email" name="email" id="input-email">
+                        <svg class="svg-form">
+                            <use href="./images/icons/icon.svg#icon-correo-negro" />
+                        </svg>
+                    </div>
+                  
+
+                    <div>
+                        <label class="labe-comentario" for="input-comentarios">Comentarios</label>
+                        <textarea name="comentario" id="input-comentarios" placeholder="Introdusca el texto " cols="20" rows="5"></textarea>
+                    </div>
+
+                    <div class="checkbox-form">
+
+                        <input type="checkbox" name="checkbox" id="checkbox" class="modal-form-checkbox">
+                        <label for="checkbox" class="modal-form-checkbox-label">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condicones</label>
+                        
+                    </div>
+
+                   
+                    <div class="button-enviar">
+                        <button  type="submit">Enviar</button>
+                    </div>
+                    
+
+                </form>
             
             </div>
             
@@ -167,6 +216,7 @@
                 </ul>
             </div>
         </section>
+
 
 
         <section>
@@ -467,17 +517,28 @@
             </div>
 
 
+            <form class="suscribete" action="">
+                
+                <label  for="boletin-informativo">SUSCRÍBASE AL BOLETÍN INFORMATIVO</label>
+                
+                <div class="suscribete-buton">
+                    
+                    <input type="email" name="boletin" id="boletin-informativo" placeholder="Correo electronico ">
+                    <button type="submit">Suscribase </button>
+    
+                    <svg class="">
+                        <use href="./images/icons/icon.svg#icon-enviar-cono"></use>
+                    </svg>
+                    
+                </div>
 
-
-
-
-
-
-
+            </form>
 
 
         </div>
         
+
+
     </footer>
     
   <Script src="./js/modal.js"></Script> 
