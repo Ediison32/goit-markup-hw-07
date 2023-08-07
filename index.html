@@ -20,29 +20,30 @@
 </head>
 
 
-<body id="body-pricipal" >
+<body >
 
-    <header class="portafolio-container">
+    <header class="header">
 
-        <div class="container ">
-            <nav>
+        <div class="container header__container">
+
+            <nav class="header__nav">
     
-                <ul class="encabezado-portafolio lista">
-                    <li> <a class="logo-tipo" href="./index.html">Webstudy</a></li>
-                    <li> <a class="color-azul pagina-actual" href="./index.html">Estudio</a></li>
-                    <li> <a class="color-azul " href="./portafolio/portafolio.html">Portafolio</a> </li>
-                    <li> <a class="color-azul " href="/">contacto</a></li>
+                <ul class=" header__list lista">
+                    <li> <a class=" header__logo" href="./index.html">Webstudy</a></li>
+                    <li> <a class="header__link active " href="./index.html">Estudio</a></li>
+                    <li> <a class="header__link " href="./portafolio/portafolio.html">Portafolio</a> </li>
+                    <li> <a class="header__link  " href="/">contacto</a></li>
     
                 </ul>
             </nav>
     
-            <ul class="encabezado-portafolio2 lista">
-                <!-- <li> <img class="encabezado-img-correo" src="../images/potafolio/sobre.jpg" alt="email"></li> -->
+            <ul class=" header__list-two lista">
+
                 <li >
-                   <!--  <img src="../images/potafolio/sobre.jpg" alt="email"> -->
+                  
                    
-                    <a class="cambio-color"  href="mailto:edisonalvarez32@gmail.com">
-                        <svg class="icon-contacto ">
+                    <a class="icon-contacto"  href="mailto:edisonalvarez32@gmail.com">
+                        <svg class="header__icon">
                             <use href="./images/icons/icon.svg#icon-sobre"></use>
                         </svg>
                         edisonalvarez32@gmail.com
@@ -52,8 +53,8 @@
                 
                 <li >
                     <!-- <img src="../images/potafolio/teléfono inteligente.jpg" alt="telefono"> -->
-                    <a class="cambio-color" href="tel:+573192540456">
-                        <svg class="icon-contacto ">
+                    <a class="icon-contacto" href="tel:+573192540456">
+                        <svg class="header__icon ">
                             <use href="./images/icons/icon.svg#icon-telfono"></use>
                         </svg>
                         +57 319 254 0456
@@ -71,11 +72,11 @@
     
     <main>
         
-        <section class="section-soluciones">
+        <section class="main__section-soluciones">
 
-            <div class="container container-main">
+            <div class="container main__container">
                 <h1> SOLUCIONES EFICACES PARA SU NEGOCIO </h1>
-                <button class="data-modal-open" type="button "> Solicite nuestro servicio </button>
+                <button class="modal__btn--open" type="button "> Solicite nuestro servicio </button>
                 <!-- <button type="button"></button> -->
               
             </div>
@@ -83,19 +84,19 @@
         
         </section>
 
-        <section class="modal-section">
+        <section class="modal__section">
 
-            <div class="container data-modal">
+            <div class="container modal__data">
             
                 
-                <button class="data-modal-close close" type="button">  
+                <button class="modal__btn--close close" type="button">  
                     <svg >
                         <use href="./images/icons/icon.svg#icon-close"></use>
                     </svg>
 
                 </button>
 
-                <form  class="formulario">
+                <form  class="modal__form">
                     <h3>Deje sus datos, nos contactaremos con usted  </h3>
 
                     <div>
@@ -129,7 +130,7 @@
                         <textarea name="comentario" id="input-comentarios" placeholder="Introdusca el texto " cols="20" rows="5"></textarea>
                     </div>
 
-                    <div class="checkbox-form">
+                    <div class="modal__form-checkbox">
 
                         <input type="checkbox" name="checkbox" id="checkbox" class="modal-form-checkbox">
                         <label for="checkbox" class="modal-form-checkbox-label">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condicones</label>
@@ -137,7 +138,7 @@
                     </div>
 
                    
-                    <div class="button-enviar">
+                    <div class="modal__btn--enviar">
                         <button  type="submit">Enviar</button>
                     </div>
                     
@@ -152,34 +153,34 @@
         
             <div class="container ">
 
-                <ul class="lista iconos">
+                <ul class="lista main__list-icons">
                     <li>
-                        <svg class="icon"  >
+                        <svg class=" main__list-icon"  >
                             <use href="./images/icons/icon.svg#icon-antena"></use>
                         </svg>
                     </li>
 
                     <li>
-                        <svg class="icon">
+                        <svg class="main__list-icon">
                             <use href="./images/icons/icon.svg#icon-reloj"></use>
                         </svg>
                     </li>
 
                     <li>
-                        <svg class="icon">
+                        <svg class="main__list-icon">
                             <use href="./images/icons/icon.svg#icon-diagrama"></use>
                         </svg>
                     </li>
 
                     <li>
-                        <svg class="icon">
+                        <svg class="main__list-icon">
                             <use href="./images/icons/icon.svg#icon-astronauta"></use>
                         </svg>
                     </li>
                 </ul>
             
 
-                <ul class="lista lista-informacion">
+                <ul class="lista  main__list-inf">
         
                     <li>
                         <h3>ATENCIÓN A LOS DETALLES</h3>
@@ -217,26 +218,24 @@
             </div>
         </section>
 
-
-
         <section>
         
             <div class="container ">
         
-                <h2 class="title-dedicamos">
+                <h2 class="main__title-dedicamos">
                     A qué nos dedicamos
                 </h2>
-                <ul class="lista lista-dedicamos">
-                    <li class="dedicamos-img-1">
+                <ul class="lista main__list-dedicamos">
+                    <li class="main__dedicamos-img-1">
                         <!-- <img class="dedicamos-img" src="./images/caja 1 (1).jpg" alt="cajaPc1"> -->
                         <p>APLICACIONES DE ESCRITORIO</p>
                     </li>
-                    <li class="dedicamos-img-2">
+                    <li class="main__dedicamos-img-2">
                         <!-- 
                         <img class="dedicamos-img-2" src="./images/caja 2 (1).jpg" alt="cajaPc2"> -->
                         <p>APLICACIONES MÓVILES</p>
                     </li>
-                    <li class="dedicamos-img-3"><!-- 
+                    <li class="main__dedicamos-img-3"><!-- 
                         <img class="dedicamos-img" src="./images/caja 3.jpg" alt="cajaPc3"> -->
                         <p>SOLUCIONES DE DISEÑO</p>
                     </li>
@@ -244,21 +243,21 @@
             </div>
         </section>
 
-        <section class="section-equipo">
+        <section class="main__section-equipo">
         
             <div class="container">
 
                 <h2>Nuestro Equipo </h2>
-                <ul class="lista lista-equipo">
+                <ul class="lista main__list-equipo">
         
                     <li>
-                        <img class="equipo-img" src="./images/imagen1.jpg" alt="Andrés Cubo Diseñador">
+                        <img class="main__equipo-img" src="./images/imagen1.jpg" alt="Andrés Cubo Diseñador">
                         <h3>Andrés Cubo</h3>
                         <p>
                             Diseñador de Productos
                         </p>
                        
-                        <ul class="redes-sociales-equipo cambio-color lista">
+                        <ul class="main__list-redes main__list-redescambio-color lista">
                         
                         
                             <li>
@@ -286,14 +285,14 @@
                     </li>
         
                     <li>
-                        <img class="equipo-img" src="./images/imagen2.jpg" alt="Carla Palacios Desarrolladora">
+                        <img class="main__equipo-img" src="./images/imagen2.jpg" alt="Carla Palacios Desarrolladora">
         
                         <h3>Carla Palacios</h3>
                         <p>
                             Desarrolladora Frontend
                         </p>
 
-                        <ul class="redes-sociales-equipo cambio-color lista">
+                        <ul class="main__list-redes main__list-redescambio-color lista">
                         
                         
                             <li>
@@ -321,13 +320,13 @@
                     </li>
         
                     <li>
-                        <img class="equipo-img" src="./images/imagen3.jpg" alt="Mario Dorado Marketing">
+                        <img class="main__equipo-img" src="./images/imagen3.jpg" alt="Mario Dorado Marketing">
                         <h3> Mario Dorado</h3>
                         <p>
                             Marketing
                         </p>
 
-                        <ul class="redes-sociales-equipo cambio-color lista">
+                        <ul class="main__list-redes main__list-redescambio-color lista">
                         
                         
                             <li>
@@ -355,13 +354,13 @@
                     </li>
         
                     <li>
-                        <img class="equipo-img" src="./images/imagen4.jpg" alt="Pablo Mijangos Diseñador ">
+                        <img class="main__equipo-img" src="./images/imagen4.jpg" alt="Pablo Mijangos Diseñador ">
                         <h3>Pablo Mijangos</h3>
                         <p>
                             Diseñador UX
                         </p>
 
-                        <ul class="redes-sociales-equipo cambio-color lista">
+                        <ul class="main__list-redes cambio-color lista">
                         
                         
                             <li>
@@ -435,16 +434,6 @@
         </section>
 
     </main>
-    
-    
-    
-
-
-    
-    
-
-    
-
     <!-- class="equipo" -->
 
     
@@ -452,17 +441,17 @@
 
     
     
-    <footer  class="fotter ">
+    <footer  class="footer ">
     
-        <div class="container fotter-div">
+        <div class="container footer__cart">
 
-            <div class="fotter-addres">
+            <div class="footer__addres">
               
-                <a class="logo-tipo foter-titulo" href="/">Webstudy</a>
+                <a class="footer__logo footer-titulo" href="/">Webstudy</a>
                 
                 <address>
                 
-                    <ul class="addres-info lista">
+                    <ul class="footer__list lista">
                         <li>
                             <a class="color"
                                 href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102022,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?entry=ttu">
@@ -487,8 +476,8 @@
                 <address>
             
                     <h3 class="title-redes-sociales">ENCUENTRENOS EN </h3>
-            
-                    <ul class="redes-sociales cambio-color lista">
+                                                    <!-- cambiar  -->
+                    <ul class="footer__list-two  footer__list-redes  cambio-color lista">
             
             
                         <li>
@@ -517,11 +506,11 @@
             </div>
 
 
-            <form class="suscribete" action="">
+            <form class="footer__form" action="">
                 
                 <label  for="boletin-informativo">SUSCRÍBASE AL BOLETÍN INFORMATIVO</label>
                 
-                <div class="suscribete-buton">
+                <div class="footer__btn--suscribete">
                     
                     <input type="email" name="boletin" id="boletin-informativo" placeholder="Correo electronico ">
                     <button type="submit">Suscribase </button>
